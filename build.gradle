@@ -46,6 +46,7 @@ project(":desktop") {
 
     dependencies {
         implementation project(":core")
+        implementation 'com.github.Ghozti.RPiBotLib:core:1.1.2'
         implementation 'org.slf4j:slf4j-api:1.7.32'
         implementation 'org.slf4j:slf4j-simple:1.7.32'
         implementation 'com.pi4j:pi4j-core:2.1.1'
@@ -61,7 +62,6 @@ project(":desktop") {
         api ("com.badlogicgames.gdx:gdx-tools:$gdxVersion") {
             exclude group: 'com.badlogicgames.gdx', module: 'gdx-backend-lwjgl'
         }
-        implementation 'com.github.Ghozti.RPiBotLib:core:1.1.0'
     }
 }
 
@@ -70,6 +70,7 @@ project(":core") {
 
 
     dependencies {
+        implementation 'com.github.Ghozti.RPiBotLib:core:1.1.2'
         implementation 'org.slf4j:slf4j-api:1.7.32'
         implementation 'org.slf4j:slf4j-simple:1.7.32'
         implementation 'com.pi4j:pi4j-core:2.1.1'
@@ -85,6 +86,5 @@ project(":core") {
         api ("com.badlogicgames.gdx:gdx-tools:$gdxVersion") {
             exclude group: 'com.badlogicgames.gdx', module: 'gdx-backend-lwjgl'
         }
-        implementation 'com.github.Ghozti.RPiBotLib:core:1.1.0'
     }
 }

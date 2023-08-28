@@ -4,9 +4,7 @@ import pibotlib.lib.addons.TimedRobotBase;
 import pibotlib.lib.gamecontrollers.LocalXboxController;
 
 public class Robot extends TimedRobotBase {
-
     public Robot(){
-        //constructor called once which can create its own controller
     }
 
     public Robot(LocalXboxController controller){
@@ -15,7 +13,6 @@ public class Robot extends TimedRobotBase {
 
     @Override
     public void robotInit() {
-
     }
 
     @Override
@@ -25,12 +22,14 @@ public class Robot extends TimedRobotBase {
 
     @Override
     public void autonomousPeriodic() {
-
     }
 
     @Override
     public void teleopPeriodic() {
+    }
 
+    @Override
+    public void disabledPeriodic() {
     }
 
     @Override
